@@ -43,9 +43,13 @@ void loop() {
   Serial.print("Distance: ");
   Serial.println(distance);
   
-  // --------------------------------------------------------
-  // ADD Your Code Here - Detect a specific distance... like distance > 5 cm
-  
-  
-  // --------------------------------------------------------
+ 
+  while(distance <50){
+    Serial.println("Hi");
+    Serial.println(distance); 
+    digitalWrite (LED_BUILTIN, HIGH);
+   }
+    Serial.println("Bye");
+    digitalWrite(LED_BUILTIN, LOW);
 }
+  
