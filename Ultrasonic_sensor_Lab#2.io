@@ -7,7 +7,6 @@
 // defines pins numbers
 const int trigPin = 11;
 const int echoPin = 12;
-
 // defines variables
 long duration;
 int distance;
@@ -43,9 +42,18 @@ void loop() {
   Serial.print("Distance: ");
   Serial.println(distance);
   
-  // --------------------------------------------------------
-  // ADD Your Code Here - Detect a specific distance... like distance > 5 cm
   
   
-  // --------------------------------------------------------
+  if(distance > 20) 
+  {
+  Serial.println("STOP!");
+  }
+    else
+  {
+   
+      Serial.println ("safe :)");
+    }
 }
+
+
+  
