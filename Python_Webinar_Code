@@ -1,0 +1,16 @@
+x = 6
+y = 8
+z = (x * y)
+print (z)
+
+if z > y > x:
+    print ('x is greather than y and greater than x')
+    
+if z < y/x:
+    print ('z is greater than y/x')
+else:
+    print ('z is less than than y/x')
+
+str = 'tacocat'
+str[1:4]
+str[4:]
